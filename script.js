@@ -27,6 +27,7 @@ const members = [
   }
 ];
 
+
 // カードを表示する関数
 function renderMembers(list) {
   const container = document.getElementById("member-list");
