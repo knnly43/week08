@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSSE メンバー一覧</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+
+  <h1 class="text-3xl font-bold mb-6 text-center">POSSE メンバー一覧</h1>
+
+  <!-- 絞り込みボタン（発展） -->
+  <div class="flex gap-3 justify-center mb-6">
+    <button data-role="all" class="filter-btn bg-blue-500 text-white px-4 py-2 rounded">全員</button>
+    <button data-role="engineer" class="filter-btn bg-blue-500 text-white px-4 py-2 rounded">エンジニア</button>
+    <button data-role="designer" class="filter-btn bg-blue-500 text-white px-4 py-2 rounded">デザイナー</button>
+  </div>
+
+  <!-- カードを入れる場所 -->
+  <div id="member-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
